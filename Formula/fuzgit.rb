@@ -11,19 +11,19 @@ class Fuzgit < Formula
   on_macos do
     on_arm do
       url "https://github.com/hatohato25/fuzgit/releases/download/v#{version}/fuzgit-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000" # aarch64-apple-darwin
+      sha256 "15abc1fd437ec69aa072055578b74611346c60f4ba13fe1e2a9d21415d8fe69b" # aarch64-apple-darwin
     end
 
     on_intel do
       url "https://github.com/hatohato25/fuzgit/releases/download/v#{version}/fuzgit-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000" # x86_64-apple-darwin
+      sha256 "fe45a092ef029e634fc32914ce1a91247fc266cb850208c2b8b92ff2f9d33624" # x86_64-apple-darwin
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/hatohato25/fuzgit/releases/download/v#{version}/fuzgit-v#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000" # x86_64-unknown-linux-musl
+      sha256 "37432d1b88a02520881c5ba44123a792c134d84f187e5336fe8780c2fc6ae481" # x86_64-unknown-linux-musl
     end
   end
 
