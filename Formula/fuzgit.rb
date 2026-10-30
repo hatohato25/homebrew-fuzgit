@@ -1,7 +1,7 @@
 class Fuzgit < Formula
   desc "TUI Git CLI tool with fuzzy search, written in Rust"
   homepage "https://hatohato25.github.io/fuzgit/"
-  version "0.15.0"
+  version "0.15.1"
   license "MIT"
 
   # 各 sha256 行末の "# <target>" は、fuzgit 側の build-and-publish.yml が
@@ -11,19 +11,19 @@ class Fuzgit < Formula
   on_macos do
     on_arm do
       url "https://github.com/hatohato25/fuzgit/releases/download/v#{version}/fuzgit-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "53a71cd761be9cb573c2fd20f8a6cf80306a44aa7171e50e882fc62839290f97" # aarch64-apple-darwin
+      sha256 "e45b355961c969f8ccb08de8866bf4919174b9dd82e2087bb06e909066adb7a4" # aarch64-apple-darwin
     end
 
     on_intel do
       url "https://github.com/hatohato25/fuzgit/releases/download/v#{version}/fuzgit-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "cffe9ab85d0702bd7428d946d77d60d1e2d39c5ae7f778e6c8ad37f5b8e36fec" # x86_64-apple-darwin
+      sha256 "0ded8c09aeede6a69678f0bd1d8c4f65092f4d03319a96c6139ee927f2eee44a" # x86_64-apple-darwin
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/hatohato25/fuzgit/releases/download/v#{version}/fuzgit-v#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "e0c347591283bf285de4ec5d7034c2220875fb0f9224052a3e2da3f10cedc95d" # x86_64-unknown-linux-musl
+      sha256 "fd3dda013884d7024d9e84d7c03bccf0fa52e76d7bc8edf3390dc05298ac204f" # x86_64-unknown-linux-musl
     end
   end
 
